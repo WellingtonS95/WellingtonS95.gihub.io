@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carrosel</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Na tag 'a', usamos uma funçao chamando o Javascript -->
+        <a class="prev" href="#" onclick="addSlides(-1)">
+         <span>&#10094;</span>  <!--Simbolo "unicode" puxado por código do site https://symbl.cc -->
+          <span class="prev-text">Voltar</span>
+        </a>
+
+        <div class="slides fade">
+            <img src="assets/lambo01.webp"  height="800px" alt="Carro esportivo azul">
+            <h2 class="title">Super Esportivo</h2>
+            <p class="content">Icone entre os icones; um simbolo de bom gosto, poder e respeito.</p>
+        </div>
+
+        <div class="slides fade">
+            <img src="assets/lambo02.png" height="100px" alt="Carro esportivo preto">
+            <h2 class="title">Super Esportivo</h2>
+            <p class="content">Motor traseiro, chassis campeão da GT2 e GT3.</p>
+        </div>
+
+        <div class="slides fade">
+            <img src="assets/lambo4.webp" width="auto" height="550px" alt="Carro esportivo azul">
+            <h2 class="title">Super Esportivo</h2>
+            <p class="content">Queridinho dos Sheiks, Campeão da Le Mans e GT1, Além de ser eleito o mais seguro da categoria.<br><br>
+                <span>Wellington Santos</span>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- Aqui chamamos a tag em Javascript de novo, mas com 1 positivo -->
+        <button class="button" onclick="addSlides(1)">Próximo</button>
+        <div class="dot-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <script src="handle.js"></script>
+</body>
+</html>
